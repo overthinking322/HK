@@ -1,0 +1,2 @@
+(self.__LOADABLE_LOADED_CHUNKS__=self.__LOADABLE_LOADED_CHUNKS__||[]).push([["4134"],{166604:function(_,n,r){var o={locale:"ru-RU",i18nStrings:void 0,plural:r(234678)};_.exports=o},234678:function(_){_.exports=function(_){return+_%10==1&&_%100!=11?0:_%10>=2&&_%10<=4&&(_%100<10||_%100>=20)?1:2}}}]);
+//# sourceMappingURL=https://sm.pinimg.com/webapp/locale-ru_RU-data-js-4fdd823b1f314e25.mjs.map

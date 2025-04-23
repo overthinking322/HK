@@ -1,0 +1,148 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Dancing Script', cursive, sans-serif;
+	background: url('gifs/hello-kitty-dance.gif') no-repeat center center fixed;
+	background-size: cover;
+	color: #d63384;
+	text-align: center;
+	animation: fadeInBackground 4s ease-in-out;
+}
+
+@keyframes fadeInBackground {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.wrapper {
+	background: rgba(255, 255, 255, 0.75);
+	max-width: 1000px;
+	margin: 50px auto;
+	padding: 30px;
+	border-radius: 20px;
+	box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+	animation: fadeInContent 2s ease-in-out;
+	display: none;
+}
+
+@keyframes fadeInContent {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+h1 {
+	font-size: 3em;
+	margin-bottom: 10px;
+	animation: slideInFromTop 1s ease-out;
+}
+
+@keyframes slideInFromTop {
+	0% {
+		transform: translateY(-50px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+img {
+	width: 200px;
+	border-radius: 20px;
+	box-shadow: 0 0 15px pink;
+	transition: transform 0.3s ease;
+}
+
+img:hover {
+	transform: scale(1.1);
+}
+
+.btn {
+	margin-top: 20px;
+	display: inline-block;
+	background: #ff69b4;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 30px;
+	text-decoration: none;
+	font-weight: bold;
+	transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+	background: #e754a8;
+	transform: translateY(-5px);
+}
+
+.menu-btn {
+	margin: 10px;
+	background: #ffc0cb;
+	color: white;
+	padding: 10px 25px;
+	border-radius: 25px;
+	text-decoration: none;
+	font-weight: bold;
+	border: none;
+	cursor: pointer;
+	transition: background 0.3s, transform 0.3s;
+	font-size: 1.2em;
+}
+
+.menu-btn:hover {
+	background: #ff69b4;
+	transform: scale(1.05);
+}
+
+.button-container {
+	margin-top: 40px;
+}
+
+/* Gallery grid layout */
+.gallery-grid {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 15px;
+	justify-items: center;
+}
+
+.gallery-grid img {
+	width: 100%;
+	max-width: 180px;
+	border-radius: 15px;
+	border: 5px solid #ffb6c1;
+	box-shadow: 0 4px 10px rgba(255, 105, 180, 0.4);
+}
+
+@media (max-width: 768px) {
+	.wrapper {
+		width: 90%;
+		margin: 20px auto;
+		padding: 20px;
+	}
+
+	h1 {
+		font-size: 2.5em;
+	}
+
+	img {
+		width: 150px;
+	}
+
+	.btn {
+		padding: 8px 15px;
+		font-size: 1.2em;
+	}
+
+	.gallery-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
